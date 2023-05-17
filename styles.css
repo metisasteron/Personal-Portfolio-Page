@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+}
+
+.divider {
+  width: 100%;
+  height: 2vh;
+  max-height: 50px;
+  background-color: #373737;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  background-color: #373737;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: lightgray;
+  font-size: 1.3rem;
+  font-family: sans-serif;
+  padding: 1rem;
+  border-radius: 20%
+}
+
+#welcome-section {
+  width: 100%;
+  min-height: 400px;
+  background: linear-gradient( 
+    #0f1133 0%, #113589 45%, #115d8f 60%, #147b9a 80%, #97710b 99%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: sans-serif;
+  color: lightgray;
+  text-align: center;
+}
+
+h2{
+  margin: 0;
+  padding: 10px;
+  font-size: 1.8rem;
+  text-align: center;
+  font-family: sans-serif;
+  color: lightgray;
+}
+
+#projects {
+  width: 100%;
+  min-height: 800px;
+  background-color: #575757;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.project-tile {
+  width: 80%;
+  max-width: 500px;
+  max-height: 500px;
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+  color: #373737;
+}
+
+.project-tile:hover {
+  background-color: #373737;
+  .project-tile-text {
+    background-color: #373737;
+    color: lightgray;
+  }
+}
+
+.project-tile > img {
+  width: 100%;
+}
+
+.project-tile-text {
+  text-decoration: none;
+  width: 100%;
+  height: 5vh;
+  background-color: lightgray;
+  text-align: center;
+}
+
+#contact-me {
+  width: 100%;
+  min-height: 300px;
+  background-color: #575757;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.contact-paragraph {
+  color: lightgray;
+}
+
+.contact-link-container{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: lightgray;
+  border: 1px solid lightgray;
+  padding: 5px;
+  border-radius: 20%;
+}
+
+.contact-link:hover, .nav-link:hover {
+  color: #373737;
+  background-color: lightgray;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #373737;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (width < 600px) {
+  .project-container {
+  grid-template-columns: 1fr;
+}
+}
